@@ -7,8 +7,6 @@ export interface Config {
 }
 
 export const config: Config = {
-  site: { name: 'Seyi Adisa Dashboard', description: '', themeColor: '#090a0b', url: getSiteURL() },
+  site: { name: 'southeastelitefrenchies', description: '', themeColor: '#090a0b', url: getSiteURL() },
   logLevel: (process.env.NEXT_PUBLIC_LOG_LEVEL as keyof typeof LogLevel) ?? LogLevel.ALL,
-
-  
 };

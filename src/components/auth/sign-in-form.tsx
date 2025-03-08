@@ -27,7 +27,10 @@ const schema = zod.object({
 
 type SignInWithPasswordParams = zod.infer<typeof schema>;
 
-const defaultValues: SignInWithPasswordParams = { email: 'southeastelitefrenchiesbulldog@gmail.com', password: 'SouthEastElite1' };
+const defaultValues: SignInWithPasswordParams = {
+  email: 'southeastelitefrenchiesbulldog@gmail.com',
+  password: 'SouthEastElite1',
+};
 
 export function SignInForm(): React.JSX.Element {
   const router = useRouter();
